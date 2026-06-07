@@ -1,0 +1,6 @@
+- name: Ansible Facts
+  hosts: frontend
+  tasks:
+  - name: gathering ansible facts from frontend
+    debug:
+      msg: " {{ansible_facts}}"
