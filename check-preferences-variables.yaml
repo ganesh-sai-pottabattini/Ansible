@@ -6,7 +6,7 @@
   - varsfile.yaml
   vars_prompt:
     - name: full_name
-      promt: Please enter full_name from prompt
+      promt: " Please enter full_name from prompt "
       private: false
   
   tasks:
