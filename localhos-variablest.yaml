@@ -1,0 +1,10 @@
+- name: Demo on Variables in localhost
+  hosts: localhost
+  connection: local
+  vars:
+    name: "Ganesh"
+    age: 25
+    place: "Miryalaguda"
+  tasks:
+  - debug: 
+    vars:
