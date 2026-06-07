@@ -7,4 +7,4 @@
     place: "Miryalaguda"
   tasks:
   - debug: 
-     vars:
+     var: name
