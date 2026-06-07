@@ -9,5 +9,5 @@
   - name:
     vars:
       Name: Sai
-  - debug: 
+   debug: 
      msg: " Hi, I am {{Name}}, I'm {{Age}} years old from {{Place}} "
