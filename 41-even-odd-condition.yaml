@@ -1,5 +1,5 @@
 - name: Even or Odd
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
     given_number: 7
