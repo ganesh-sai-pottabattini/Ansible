@@ -6,4 +6,4 @@
   tasks:
   - name: print Variables
     debug:
-    msg: " Hi, I am {{NAME}}, I'm {{AGE}} years old from {{PLACE}}"
+     msg: " Hi, I am {{NAME}}, I'm {{AGE}} years old from {{PLACE}}"
