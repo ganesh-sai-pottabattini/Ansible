@@ -8,3 +8,5 @@
   tasks:
   - debug: 
      var: "name"
+     var: age
+     var: place
