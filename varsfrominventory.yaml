@@ -1,0 +1,6 @@
+- name: Demo on variables from inventory Files
+  hosts: local
+  connection: local
+  tasks:
+    debug:
+      msg: " Hi, I am {{Name}}, I'm {{Age}} years old from {{Place}} "
