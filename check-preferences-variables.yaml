@@ -3,7 +3,7 @@
   vars:
    full_name: "Ganesh Sai Pottabattini from play"
   vars_files:
-  - varsfile.yaml
+  #- varsfile.yaml
   vars_prompt:
     - name: full_name
       prompt: " Please enter full_name from prompt "
