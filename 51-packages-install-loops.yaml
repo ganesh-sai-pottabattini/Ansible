@@ -5,7 +5,7 @@
   tasks:
   - name: Install Packages
     package: 
-      name: {{ item }}
+      name: "{{ item }}"
       state: present
     loop:
     - nginx
