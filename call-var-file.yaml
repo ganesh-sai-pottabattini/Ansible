@@ -1,0 +1,9 @@
+- name: Demo on Variable Files
+  hosts: localhost
+  connection: local
+  vars_files:
+  - variables-file.yaml
+  tasks:
+  - name: print Variables
+    debug:
+    msg: " Hi, I am {{NAME}}, I'm {{AGE}} years old from {{PLACE}}"
