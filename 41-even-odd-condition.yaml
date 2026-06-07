@@ -1,0 +1,10 @@
+- name: Even or Odd
+  hosts: local
+  connection: local
+  vars:
+    given_number: 7
+  tasks:
+  - name: Is even or Odd ?
+    debug:
+      msg: "given number is even"
+    when: given_number % 2 == 0
