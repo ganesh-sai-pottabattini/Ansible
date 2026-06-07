@@ -11,5 +11,6 @@
     private: true
 
   tasks:
-   debug:
-    msg: {{username}} {{password}}
+  - name: print
+    debug:
+     msg: {{username}} {{password}}
