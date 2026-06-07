@@ -1,0 +1,14 @@
+- name: Installing Packages using LOOPS
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: Install Packages
+    package: 
+      name: "{{ item.name }}"
+      state: " {{ item.state }} "
+    loop:
+    - { name: "nginx" , state: "present" }
+    - { name: "mysql" , state: "absent"
+    - { name: "mongodb-mongosh" , state: "present" }
+    - { name: "git" , state: "absent" }

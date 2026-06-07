@@ -12,3 +12,16 @@
     - mysql
     - mongodb-org-mongosh
     - git
+
+#[ ec2-user@ip-172-31-33-121 ~/Ansible ]$ ansible-playbook -i inventory.ini 51-packages-install-loops.yaml
+#
+#PLAY [Installing Packages using LOOPS] **************************************************************************************************************************************************
+#
+#TASK [Gathering Facts] ******************************************************************************************************************************************************************
+#ok: [localhost]
+#
+#TASK [Install Packages] *****************************************************************************************************************************************************************
+#changed: [localhost] => (item=nginx)
+#changed: [localhost] => (item=mysql)
+#failed: [localhost] (item=mongodb-org-mongosh) => {"ansible_loop_var": "item", "changed": false, "failures": ["No package mongodb-org-mongosh available."], "item": "mongodb-org-mongosh", "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+#ok: [localhost] => (item=git)
