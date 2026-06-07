@@ -3,4 +3,4 @@
   tasks:
   - name: gathering ansible facts from frontend
     debug:
-      msg: " {{ansible_facts}}"
+      msg: " {{ansible_facts}} "
