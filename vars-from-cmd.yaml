@@ -1,0 +1,7 @@
+- name: Variables from commands
+  hosts: local
+  connection: local
+  tasks:
+    - name: Print Variables from commands
+      debug:
+        msg: " Hi , I am {{name}} from {{place}}, I am {{}} years old ""
