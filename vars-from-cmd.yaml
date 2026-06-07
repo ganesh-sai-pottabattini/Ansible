@@ -4,4 +4,4 @@
   tasks:
     - name: Print Variables from commands
       debug:
-        msg: " Hi , I am {{name}} from {{place}}, I am {{}} years old today "
+        msg: " Hi , I am {{name}} from {{place}}, I am {{age}} years old today "
