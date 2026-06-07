@@ -1,7 +1,7 @@
 - name: Install and Start nginx
   hosts: frontend
   become: yes
-  taks: 
+  tasks: 
   - name: Install nginx
     package:
       name: nginx
