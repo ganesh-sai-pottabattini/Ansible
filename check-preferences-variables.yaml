@@ -5,9 +5,9 @@
   vars_files:
   - varsfile.yaml
   vars_prompt:
-  - name: full_name
-    promt: Please enter full_name from prompt
-    private: false
+    - name: full_name
+      promt: Please enter full_name from prompt
+      private: false
   
   tasks:
    - name: print the vars from this tasks
