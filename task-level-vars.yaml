@@ -1,4 +1,4 @@
-- name: Demo on Variables in localhost
+- name: Demo on Variables in Task Object
   hosts: localhost
   connection: local
   vars:
@@ -6,8 +6,8 @@
     Age: 25
     Place: "Miryalaguda"
   tasks:
-  - name:
+  - name: Task level Variables
     vars:
       Name: Sai
-   debug: 
+    debug: 
      msg: " Hi, I am {{Name}}, I'm {{Age}} years old from {{Place}} "
