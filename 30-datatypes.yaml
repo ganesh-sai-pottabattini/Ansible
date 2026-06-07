@@ -23,3 +23,16 @@
           is_it_Live: {{is_live}}
           topics: {{topics}}
           more_details: {{more_details}}
+
+
+#[ ec2-user@ip-172-31-39-29 ~/Ansible ]$ ansible-playbook -i inventory.ini datatypes.yaml
+
+#PLAY [Demo on Dtatypes] *****************************************************************************************************************************************************************
+#
+#TASK [Gathering Facts] ******************************************************************************************************************************************************************
+#ok: [localhost]
+#
+#TASK [Print the Details of the course] **************************************************************************************************************************************************
+#ok: [localhost] => {
+#    "msg": "name: DevSecOps with AI/ML\nduration: 150\nis_it_Live: True\ntopics: ['linux', 'git', 'shell', 'ansible']\nmore_details: {'months': 5, 'trainer': 'siva'}"
+#}

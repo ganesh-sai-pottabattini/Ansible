@@ -14,3 +14,16 @@
     debug:
       msg: " {{ given_number }} is odd"
     when: given_number % 2 != 0
+
+    
+#[ ec2-user@ip-172-31-39-29 ~/Ansible ]$ ansible-playbook -i inventory.ini 41-even-odd-condition.yaml
+#[WARNING]: While constructing a mapping from /home/ec2-user/Ansible/41-even-odd-condition.yaml, line 1, column 3, found a duplicate dict key (tasks). Using last defined value only.
+#
+#PLAY [Even or Odd] **********************************************************************************************************************************************************************
+#
+#TASK [Gathering Facts] ******************************************************************************************************************************************************************
+#ok: [localhost]
+#
+#TASK [Is odd] ***************************************************************************************************************************************************************************
+#ok: [localhost] => {
+#   "msg": " 7 is odd"
