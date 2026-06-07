@@ -1,0 +1,15 @@
+- name: Install and Start nginx
+  hosts: frontend
+  become: yes
+  taks: 
+  - name: Install nginx
+    package:
+      name: nginx
+      state: present
+
+  - name: Start nginx
+    service:
+    name: nginx
+    state: started
+    enabled: yes #( if you wanna start and enable it at the same time )
+
