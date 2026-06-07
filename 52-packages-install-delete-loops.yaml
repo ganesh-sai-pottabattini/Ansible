@@ -12,3 +12,17 @@
     - { name: "mysql" , state: "absent" }
     - { name: "mongodb-mongosh" , state: "present" }
     - { name: "git" , state: "absent" }
+
+
+#[ ec2-user@ip-172-31-33-121 ~/Ansible ]$ ansible-playbook -i inventory.ini 52-packages-install-delete-loops.yaml
+#
+#PLAY [Installing Packages using LOOPS] **************************************************************************************************************************************************
+#
+#TASK [Gathering Facts] ******************************************************************************************************************************************************************
+#ok: [localhost]
+#
+#TASK [Install Packages] *****************************************************************************************************************************************************************
+#ok: [localhost] => (item={'name': 'nginx', 'state': 'present'})
+#changed: [localhost] => (item={'name': 'mysql', 'state': 'absent'})
+#failed: [localhost] (item={'name': 'mongodb-mongosh', 'state': 'present'}) => {"ansible_loop_var": "item", "changed": false, "failures": ["No package mongodb-mongosh available."], "item": {"name": "mongodb-mongosh", "state": "present"}, "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+#changed: [localhost] => (item={'name': 'git', 'state': 'absent'})
