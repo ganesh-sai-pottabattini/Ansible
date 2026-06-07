@@ -1,0 +1,13 @@
+- name: Demo on Variables in localhost
+  hosts: localhost
+  connection: local
+  vars:
+    Name: "Ganesh"
+    Age: 25
+    Place: "Miryalaguda"
+  tasks:
+  - name:
+    vars:
+      Name: Sai
+  - debug: 
+     msg: " Hi, I am {{Name}}, I'm {{Age}} years old from {{Place}} "
