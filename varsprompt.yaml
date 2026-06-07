@@ -1,0 +1,11 @@
+- name: Demo on prompt [ reading values from prompt ]
+  hosts: localhost
+  connection: local
+  vars_prompt:
+  - Name: username
+    prompt: Please enter your username
+    private: false
+
+  - Name: password
+    prompt: Please enter your password
+    private: false
