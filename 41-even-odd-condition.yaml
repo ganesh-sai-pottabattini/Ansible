@@ -6,11 +6,11 @@
   tasks:
   - name: Is even 
     debug:
-      msg: " {{ given number }} is even"
+      msg: " {{ given_number }} is even"
     when: given_number % 2 == 0
 
   tasks:
   - name: Is odd
     debug:
-      msg: " {{ given number }} is odd"
+      msg: " {{ given_number }} is odd"
     when: given_number % 2 != 0
