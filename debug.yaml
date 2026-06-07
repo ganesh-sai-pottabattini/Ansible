@@ -1,0 +1,6 @@
+- name: demo on debug
+  hosts: frontend
+  tasks: 
+  - name: demo on debug
+    debug:
+    
