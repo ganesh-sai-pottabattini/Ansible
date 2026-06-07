@@ -15,6 +15,7 @@
       trainer: siva
     
   tasks:
+   - name: Print the Details of the course
     debug:
       msg : |
         name: {{course}}
