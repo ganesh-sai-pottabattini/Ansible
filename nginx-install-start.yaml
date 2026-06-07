@@ -9,7 +9,7 @@
 
   - name: Start nginx
     service:
-    name: nginx
-    state: started
-    enabled: yes #( if you wanna start and enable it at the same time )
+     name: nginx
+     state: started
+     enabled: yes #( if you wanna start and enable it at the same time )
 
