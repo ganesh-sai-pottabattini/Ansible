@@ -4,4 +4,4 @@
   tasks:
   - name: Demo on variables from inventory Files
     debug:
-      msg: " Hi, I am {{NAME}}, I'm {{AGE}} years old from {{PLACE}} common_key: {{common_key}} "
+      msg: " Hi, I am {{NAME}}, I'm {{AGE}} years old from {{PLACE}} common_key is {{common_key}} "
