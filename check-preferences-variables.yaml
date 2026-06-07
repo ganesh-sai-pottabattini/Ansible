@@ -12,6 +12,6 @@
   tasks:
    - name: print the vars from this tasks
      vars:
-      full_name: " Pottabattini Sai Ganesh from task "
+      #full_name: " Pottabattini Sai Ganesh from task "
      debug: 
       msg: " Hi, {{full_name}} "
