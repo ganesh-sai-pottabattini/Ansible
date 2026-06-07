@@ -16,10 +16,10 @@
     
   tasks:
    - name: Print the Details of the course
-    debug:
-      msg : |
-        name: {{course}}
-        duration: {{duration_in_hrs}}
-        is_it_Live: {{is_live}}
-        topics: {{topics}}
-        more_details: {{more_details}}
+     debug:
+        msg : |
+          name: {{course}}
+          duration: {{duration_in_hrs}}
+          is_it_Live: {{is_live}}
+          topics: {{topics}}
+          more_details: {{more_details}}
