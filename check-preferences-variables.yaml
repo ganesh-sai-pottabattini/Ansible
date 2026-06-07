@@ -1,7 +1,7 @@
 - name: Demo on checking preference of variables from different sources
   hosts: frontend
   vars:
-   full_name: "Ganesh Sai Pottabattini from play"
+   #full_name: "Ganesh Sai Pottabattini from play"
   vars_files:
   #- varsfile.yaml
   #vars_prompt:
