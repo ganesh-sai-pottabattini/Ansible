@@ -1,16 +1,15 @@
-- name: Demo on prompt [ reading values from prompt ]
+- name: Demo on taking the inputs from prompt and printing it
   hosts: localhost
   connection: local
   vars_prompt:
-  - name: username
-    prompt: Please enter your username
-    private: false
-
-  - name: password
-    prompt: Please enter your password
-    private: true
+    - name: username
+      prompt: Please enter your username
+      private: false
+    
+    - name: password
+      prompt: Please enter your password
+      private: false
 
   tasks:
-  - name: print
-    debug:
-     msg: " {{username}} {{password}} "
+   debug:
+    msg: "Username is {{username}} Password is {{password}} "
