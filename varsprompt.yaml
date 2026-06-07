@@ -9,3 +9,7 @@
   - name: password
     prompt: Please enter your password
     private: true
+
+  tasks:
+   debug:
+    msg: {{username}} {{password}}
