@@ -2,9 +2,9 @@
   hosts: localhost
   connection: local
   vars:
-    name: "Ganesh"
+    Name: "Ganesh"
     age: 25
-    place: "Miryalaguda"
+    Place: "Miryalaguda"
   tasks:
   - debug: 
-     msg: " Hi, I am {{name}}, I'm {{age}} years old from {{place}} "
+     msg: " Hi, I am {{Name}}, I'm {{Age}} years old from {{place}} "
