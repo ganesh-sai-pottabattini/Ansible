@@ -12,3 +12,30 @@
     - Bhaaru
     - Ritish
     - Thopgang
+
+
+#[ ec2-user@ip-172-31-39-29 ~/Ansible ]$ ansible-playbook -i inventory.ini 50-loops.yaml
+#
+#PLAY [Demo on LOOPS] ********************************************************************************************************************************************************************
+#
+#TASK [Gathering Facts] ******************************************************************************************************************************************************************
+#ok: [localhost]
+#
+#TASK [Print Names] **********************************************************************************************************************************************************************
+#ok: [localhost] => (item=Ganesh) => {
+#    "msg": " Hi Ganesh"
+#}
+#ok: [localhost] => (item=Teja) => {
+#    "msg": " Hi Teja"
+#}
+#ok: [localhost] => (item=Vikram) => {
+#    "msg": " Hi Vikram"
+#}
+#ok: [localhost] => (item=Bhaaru) => {
+#    "msg": " Hi Bhaaru"
+#}
+#ok: [localhost] => (item=Ritish) => {
+#    "msg": " Hi Ritish"
+#}
+#ok: [localhost] => (item=Thopgang) => {
+#    "msg": " Hi Thopgang"
