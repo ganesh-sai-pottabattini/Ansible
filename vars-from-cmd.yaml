@@ -5,3 +5,5 @@
     - name: Print Variables from commands
       debug:
         msg: " Hi , I am {{name}} from {{place}}, I am {{age}} years old today "
+
+# ansible-playbook -i inventory.ini -e name=Ganesh -e place=mlg -e age=25 vars-from-cmd.yaml

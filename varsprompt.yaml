@@ -14,3 +14,16 @@
    - name: Print the values
      debug:
       msg: "Username is {{username}} Password is {{password}} "
+
+
+#Please enter your username: Ganesh
+#Please enter your password: Ganesh
+
+#PLAY [Demo on taking the inputs from prompt and printing it] ****************************************************************************************************************************
+
+#TASK [Gathering Facts] ******************************************************************************************************************************************************************
+#ok: [172.31.43.222]
+
+#TASK [Print the values] *****************************************************************************************************************************************************************
+#ok: [172.31.43.222] => {
+#    "msg": "Username is Ganesh Password is Ganesh "

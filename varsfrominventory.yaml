@@ -2,6 +2,12 @@
   hosts: frontend
   #connection: local
   tasks:
-  - name: Demo on variables from inventory Files
+  - name: Demo on variables from group_vars/frontend.yaml file
     debug:
       msg: " Hi, I am {{NAME}}, I'm {{AGE}} years old from {{PLACE}} common_key is {{common_key}} "
+
+      # ansible-playbook -i inventory.ini varsfrominventory.yaml
+      #TASK [Demo on variables from group_vars/frontend.yaml file ] *******************************************************************************************************************************************
+      #ok: [172.31.46.195] => {
+      #"msg": " Hi, I am Ganesh from group_vars directory, frontend file, I'm 25 years old from Miryalaguda common_key is common_value "
+      #}

@@ -1,0 +1,17 @@
+- name: Demo on checking preference of variables from different sources
+  hosts: frontend
+  vars:
+   full_name: "Ganesh Sai Pottabattini from play"
+  vars_files:
+  - varsfile.yaml
+  vars_prompt:
+  - name: full_name
+    promt: Please enter full_name from prompt
+    private: false
+  
+  tasks:
+   - name: print the vars from this tasks
+     vars:
+      full_name: " Pottabattini Sai Ganesh from task "
+     debug: 
+      msg: " Hi, {{full_name}} "

@@ -7,3 +7,7 @@
   - name: print Variables
     debug:
      msg: " Hi, I am {{NAME}}, I'm {{AGE}} years old from {{PLACE}}"
+
+#TASK [print Variables] ******************************************************************************************************************************************************************
+#ok: [localhost] => {
+#    "msg": " Hi, I am Ganesh, I'm 25 years old from Miryalaguda"

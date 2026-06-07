@@ -11,3 +11,7 @@
       Name: Sai
     debug: 
      msg: " Hi, I am {{Name}}, I'm {{Age}} years old from {{Place}} "
+
+#     TASK [Task level Variables] *************************************************************************************************************************************************************
+#ok: [localhost] => {
+#    "msg": " Hi, I am Sai, I'm 25 years old from Miryalaguda "
