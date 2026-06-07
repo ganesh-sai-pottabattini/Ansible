@@ -11,5 +11,6 @@
       private: false
 
   tasks:
-   debug:
-    msg: "Username is {{username}} Password is {{password}} "
+   - name: Print the values
+     debug:
+      msg: "Username is {{username}} Password is {{password}} "
