@@ -2,5 +2,6 @@
   hosts: local
   connection: local
   tasks:
+  - name: Demo on variables from inventory Files
     debug:
       msg: " Hi, I am {{Name}}, I'm {{Age}} years old from {{Place}} "
