@@ -1,6 +1,6 @@
 - name: Demo on taking the inputs from prompt and printing it
-  hosts: localhost
-  connection: local
+  hosts: frontend
+  #connection: local
   vars_prompt:
     - name: username
       prompt: Please enter your username
