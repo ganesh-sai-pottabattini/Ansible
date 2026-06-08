@@ -13,4 +13,4 @@
   - name: Print the variables which were in dictionary type
     debug:
       msg: "{{ item }}"
-    loop: "{{ employee }}"
+    loop: "{{ employee | dict2items }}"
