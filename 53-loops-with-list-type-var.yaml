@@ -1,0 +1,14 @@
+- name: Demo on Loops with list type variable
+  hosts: local
+  connection: local
+  vars:
+    package:
+    - git
+    - zip
+    - unzip
+  
+  tasks: 
+  - name: Print the list type variable
+    debug:
+      msg: "{{ item }}"
+    loop: "{{ package }}"

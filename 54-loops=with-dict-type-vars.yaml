@@ -1,0 +1,16 @@
+- name: Demo on loops with dictionary type
+  hosts: local
+  connection: local
+  vars:
+    employee:
+      name: "Ganesh Sai"
+      age: 25
+      role: "DevSecOps Engineer"
+      cloud: AWS
+      is_using_AI_ML: true
+  
+  tasks:
+  - name: Print the variables which were in dictionary type
+    debug:
+      msg: "{{ item }}"
+    loop: "{{ employee }}"
